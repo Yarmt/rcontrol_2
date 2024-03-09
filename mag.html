@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru"> 
+<head>
+    <meta charset="UTF-8">
+    <link rel='stylesheet' href='style4.css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <title>ГЛАВНАЯ</title>
+</head>
+<body>
+    <header class="header_0">
+        <div class='header'>
+            <div class='container'>
+                <div class='header-line'>
+                    <div class='nav'>
+                        <a class='nav-item' href="index.html">Главная</a>
+                        <a class='nav-item' href="mag.html">Магазин</a>
+                        <a class='nav-item' href="feedback.html">Оставить отзыв</a>
+                        <a class='nav-item' href="personal_page.html">Личный кабинет</a>
+                    </div>
+
+
+                    <div class='btn'>
+                        <a class='button' href='registration.html'>Регистрация</a>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="card">
+                    <img src="sneakers1.jpeg" alt="Кроссовки 1">
+                    <h2>Кроссовки 1</h2>
+                    <p>Описание кроссовок 1</p>
+                    <p>Цена: 2000 руб.</p>
+                    <button onclick="addToCart(2000)">Добавить в корзину</button>
+                </div>
+                <div class="card">
+                    <img src="sneakers2.jpg" alt="Кроссовки 2">
+                    <h2>Кроссовки 2</h2>
+                    <p>Описание кроссовок 2</p>
+                    <p>Цена: 2500 руб.</p>
+                    <button onclick="addToCart(2500)">Добавить в корзину</button>
+                </div>
+                <div class="card">
+                    <img src="sneakers3.jpg" alt="Кроссовки 3">
+                    <h2>Кроссовки 3</h2>
+                    <p>Описание кроссовок 3</p>
+                    <p>Цена: 1800 руб.</p>
+                    <button onclick="addToCart(1800)">Добавить в корзину</button>
+                </div>
+                <div class="option">    
+                    <label for="delivery">Выберите способ доставки:</label>
+                    <select name="delivery" id="delivery">
+                        <option value="standart">Стандартная доставка</option>
+                        <option value="express">Экспресс доставка</option>
+                    </select>
+                </div>
+                <p>
+                    <label for="totalPrice">Итого к оплате: </label>
+                    <input type="text" id="totalPrice" value="0" readonly/>
+                    <button onclick="checkout()">Оформить заказ</button>
+                </p>
+                <p class="thanks-text">Спасибо за покупку! </p>
+            </div>
+        </div>
+    </header>
+
+<footer class="footer">
+    <p class="container">
+        &copy; Авторское право данного сайта закрепляется за Шминке Ярославом Даниловичем
+    </p>
+</footer>
+<script>
+    let total = 0;
+    
+    function addToCart(price) {
+        total += price;
+        document.getElementById('totalPrice').value = total + ' руб.';
+    }
+    
+    function checkout() {
+        document.getElementById('orderInfo').textContent = 'Заказ успешно оформлен!';
+        total = 0;
+        document.getElementById('totalPrice').value = total;
+    }
+</script>
+</body>
+</html>

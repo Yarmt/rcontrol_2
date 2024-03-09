@@ -1,0 +1,144 @@
+.container2 {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  .footer {
+    margin-bottom: auto;
+    text-align: center;
+  }
+  .header-line {
+    display: flex;
+    justify-content: center;
+  }
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 1fr; 
+      grid-gap: 20px; 
+    }
+    .reviews {
+      grid-column: з; 
+    }
+    .cabinet {
+      grid-column: 2; 
+    }
+
+body {
+        margin: 0;
+        font-family: 'Open Sans', sans-serif;
+        background-image: url('picture/mos_background.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .blue-rectangle {
+        background-color: #92dafe;
+        color: #0238da;
+        font-weight: bold;
+        padding: 50px;
+        margin-right: 10px;
+        height: 90px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 20vh;
+    }
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 166px;
+    }
+
+    .header_0 {
+        color: #4169E1;
+        text-align: center;
+        width: 100%;
+    }
+
+    .blue-rectangle {
+        background-color: #92dafe;
+        color: #0238da;
+        font-weight: bold;
+        padding: 5px;
+        margin-right: 0px;
+        height: 90px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container {
+        margin: 0 166px;
+    }
+
+    .header_0 {
+        color: #4169E1;
+        text-align: center;
+        width: 100%;
+    }
+
+    .header-line {
+        padding-top: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin-bottom: 10px; 
+    }
+
+    .nav-item {
+        margin-right: 10px; 
+        color: #0238da;
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 18px;
+        margin-right: 25px;
+        transition: color 0.3s linear;
+    }
+
+    .nav-item:hover {
+        color: #4778cc;
+    }
+
+    .num {
+        color: #4169E1;
+        text-decoration: none;
+        font-weight: 700;
+        transition: color 0.3s linear;
+    }
+
+    .num:hover {
+        color: #4778cc;
+    }
+
+    .button {
+        background-color: #42addb;
+        color: #2b6282;
+        text-decoration: none;
+        padding: 14px 18px;
+        font-weight: 700;
+        transition: background-color 0.2s linear;
+    }
+    
+    .footer{
+        margin-bottom: auto;
+    }
+    
+    .container2{
+        margin-bottom: 300px;
+    }
+
+    .content {
+        text-decoration: aquamarine;
+        background-color: #92dafe;
+        color: #4f4f4f;
+        text-align: center;
+        margin-top: 20px;
+        font-size: 20px;
+        font-family: Arial, sans-serif;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
